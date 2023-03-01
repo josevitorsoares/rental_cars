@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { CategoryRepository } from '../modules/cars/repositories/CategoriesRepository';
-import { CreateCategoryService } from '../modules/cars/Services/CreateCategoryService';
+import { CreateCategoryService } from '../modules/cars/services/CreateCategoryService';
 
 const categoriesRoutes = Router();
 const categoryRepository = new CategoryRepository();
