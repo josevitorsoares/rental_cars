@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.n",
+    "info": {
+        "title": "Rental Cars API",
+        "description": "This is an API Rent",
+        "contact": {
+            "name": "API Support",
+            "email": "support@example.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/categories": {
+            "post": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "Create a new Category",
+                "description": "route for creating a new vehicle category",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "create name category sample",
+                                    "description": "create description sample"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Category already exist"
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "List all categories",
+                "descrption": "List all already created categories",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties":{
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
