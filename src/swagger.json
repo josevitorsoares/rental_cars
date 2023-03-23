@@ -2,7 +2,7 @@
     "openapi": "3.0.n",
     "info": {
         "title": "Rental Cars API",
-        "description": "This is an API Rent",
+        "description": "This is the documentation for the Rental Cars API. It's a test documentation, whose focus is to use the swagger-ui library as a way to learn more about documentation and get to know more about this amazing library.",
         "contact": {
             "name": "API Support",
             "email": "support@example.com"
@@ -15,8 +15,8 @@
                 "tags": [
                     "Category"
                 ],
-                "summary": "Create a new Category",
-                "description": "route for creating a new vehicle category",
+                "summary": "Create a new category",
+                "description": "Route for creating a new vehicle category",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -62,7 +62,7 @@
                                     "type": "array",
                                     "items": {
                                         "type": "object",
-                                        "properties":{
+                                        "properties": {
                                             "name": {
                                                 "type": "string"
                                             },
@@ -74,6 +74,44 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        },
+        "/specifications": {
+            "post": {
+                "tags": [
+                    "Specifications"
+                ],
+                "summary": "Create a new specification",
+                "description": "Route for creating a new vehicle specification",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "create name specification sample",
+                                    "description": "create description sample"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Specification already exist"
                     }
                 }
             }
