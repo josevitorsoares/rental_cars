@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "host": "database",
+    "port": 5432,
+    "username":"admin_db",
+    "password": "rentalcars",
+    "database": "rentalCars_db"
+}
