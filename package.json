@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "migrate:create": "typeorm migration:create \"./src/database/migrations/",
+    "migrate:up": "ts-node-dev --transpile-only ./node_modules/typeorm/cli.js migration:run -d ./src/database/MigrationsOrmconfig.ts",
+    "migrate:down": "ts-node-dev --transpile-only ./node-modules/typeorm/cli.js migration:revert"
   },
   "keywords": [],
   "author": "",

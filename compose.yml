@@ -1,5 +1,5 @@
 services:
-  database:
+  database_postgres:
     image: postgres
     container_name: database_rentalCars
     restart: always
@@ -21,7 +21,7 @@ services:
     ports:
       - 3333:3333
     depends_on:
-      - database
+      - database_postgres
     volumes:
       - .:/usr/app
 
