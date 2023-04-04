@@ -7,10 +7,8 @@ const MigrationsSource = new DataSource({
     username: 'admin_db',
     password: 'rentalcars',
     database: 'rentalCars_db',
-    logging: false,
-    synchronize: false,
     name: 'default',
-    migrations: ['./src/database/migrations/**/*.ts'],
+    migrations: ['./src/database/migrations/**/*.ts']
 });
 
 MigrationsSource

@@ -1,42 +1,42 @@
-import { Category } from "../../model/Category";
+import { DataSource, Repository } from "typeorm";
+import connectionSource from "../../../../../config/ormconfig";
+import { Category } from "../../entities/Category";
 import { ICategorieCategoryDTO, ICategoriesRespository } from "../ICategoriesRespository";
 
-class CategoryRepository implements ICategoriesRespository{
+class CategoryRepository implements ICategoriesRespository {
 
-    private categories: Category[];
+    private repopsitory: Repository<Category>;
 
-    private static INSTANCE: CategoryRepository;
+    // private static INSTANCE: CategoryRepository;
 
-    private constructor(){
-        this.categories = [];
+    constructor() {
+        this.repopsitory = connectionSource.manager.getRepository(Category);
     }
 
-    public static getInstance(): CategoryRepository{
-        if (!CategoryRepository.INSTANCE) {
-            CategoryRepository.INSTANCE = new CategoryRepository();
-        }
-        
-        return CategoryRepository.INSTANCE;
-    }
+    // public static getInstance(): CategoryRepository {
+    //     if (!CategoryRepository.INSTANCE) {
+    //         CategoryRepository.INSTANCE = new CategoryRepository();
+    //     }
 
-    create({ name, description }: ICategorieCategoryDTO): void {
-        const category = new Category();
+    //     return CategoryRepository.INSTANCE;
+    // }
 
-        Object.assign(category, {
+    async create({ name, description }: ICategorieCategoryDTO): Promise<void> {
+        const category = this.repopsitory.create({
             name,
             description,
-            created_at: new Date()
-        })
+        });
 
-        this.categories.push(category);
+        await this.repopsitory.save(category);
     }
 
-    list(): Category[]{
-        return this.categories;
+    async list(): Promise<Category[]> {
+        const categories = await this.repopsitory.find();
+        return categories;
     }
 
-    findByName(name: string): Category{
-        const category = this.categories.find(category => category.name === name);
+    async findByName(name: string): Promise<Category> {
+        const category = await this.repopsitory.findOne({ where: { name } });
 
         return category;
     }

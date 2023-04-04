@@ -1,4 +1,5 @@
 import { DataSource } from "typeorm";
+import { Category } from "../src/modules/cars/entities/Category";
 
 const connectionSource = new DataSource({
     migrationsTableName: 'migrations',
@@ -8,6 +9,8 @@ const connectionSource = new DataSource({
     username: 'admin_db',
     password: 'rentalcars',
     database: 'rentalCars_db',
+    entities: [Category],
+    synchronize: false,
 });
 
 connectionSource
