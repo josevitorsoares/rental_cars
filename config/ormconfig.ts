@@ -1,5 +1,6 @@
 import { DataSource } from "typeorm";
 import { Category } from "../src/modules/cars/entities/Category";
+import { Specification } from "../src/modules/cars/entities/Specification";
 
 const connectionSource = new DataSource({
     migrationsTableName: 'migrations',
@@ -9,7 +10,7 @@ const connectionSource = new DataSource({
     username: 'admin_db',
     password: 'rentalcars',
     database: 'rentalCars_db',
-    entities: [Category],
+    entities: [Category, Specification],
     synchronize: false,
 });
 

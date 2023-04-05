@@ -1,6 +1,6 @@
 import { DataSource } from "typeorm";
 
-const MigrationsSource = new DataSource({
+const connectionLocalSource = new DataSource({
     type: 'postgres',
     host: 'localhost',
     port: 5433,
@@ -11,7 +11,7 @@ const MigrationsSource = new DataSource({
     migrations: ['./src/database/migrations/**/*.ts']
 });
 
-MigrationsSource
+connectionLocalSource
     .initialize()
     .then(() => {
         console.log('Data Source has been inicialized');
@@ -20,4 +20,4 @@ MigrationsSource
         console.error('Data Source initialization', err)
     });
 
-export default MigrationsSource;
+export default connectionLocalSource;
