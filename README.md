@@ -1,6 +1,6 @@
 # 💡 RentalCars
 
-Este projeto tem o objetivo de aprofundar meus estudos com foco em aprender mais sobre o universo do node.JS juntamente com o TypeScript, voltados para o back-end
+Este projeto tem o objetivo de aprofundar meus estudos com foco em aprender mais sobre o universo do node.JS juntamente com o TypeScript, voltados para o back-end.
 
 <!-- # Tópicos -->
 
