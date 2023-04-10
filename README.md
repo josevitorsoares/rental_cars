@@ -10,7 +10,7 @@ Este projeto tem o objetivo de aprofundar meus estudos com foco em aprender mais
   - [Funcionalidades](#funcionalidades)
   - [Últimas Atualizações](#últimas-atualizações)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-  - [Extras](#extras)
+    - [Extras](#extras)
 
 ## Status do Projeto
 
@@ -29,10 +29,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 ## Últimas Atualizações
 
-- [x] Implementação da Migration para a Entidade de Specificações.
 - [x] Adição da listagem de todas as Especificações.
 - [x] Adição da rota `GET` para Especificações na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 - [x] Adição de Injeções de Dependências com o [Tsyringe](https://github.com/microsoft/tsyringe).
+- [x] Implementação da Migration CreateUser e da Entidade User.
 
 ## Tecnologias Utilizadas
 
@@ -45,7 +45,7 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 - `TSyringe`
 - `PostgreSQL`
 
-## Extras
+### Extras
 
 - `Prettier`
 - `ESLint`
