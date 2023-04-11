@@ -26,13 +26,14 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 - [x] Listagem de todas as categorias cadastradas na tabela "categories".
 - [x] Cadastro de novas especificações no banco de dados.
 - [x] Listagem de todas as especificações cadastradas na tabela "specifications".
+- [x] Cadastro de novos usuários no banco de dados (PostgreSQL).
 
 ## Últimas Atualizações
 
-- [x] Adição da listagem de todas as Especificações.
 - [x] Adição da rota `GET` para Especificações na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 - [x] Adição de Injeções de Dependências com o [Tsyringe](https://github.com/microsoft/tsyringe).
 - [x] Implementação da Migration CreateUser e da Entidade User.
+- [x] Adição do repositório para Entidade User e sua rota `post` para criação de novos Usuários no banco de dados.
 
 ## Tecnologias Utilizadas
 
