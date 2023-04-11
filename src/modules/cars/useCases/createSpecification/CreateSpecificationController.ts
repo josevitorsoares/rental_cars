@@ -15,4 +15,4 @@ class CreateSpecificationController {
     }
 }
 
-export { CreateSpecificationController }
+export { CreateSpecificationController };

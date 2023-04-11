@@ -11,4 +11,4 @@ interface ICategoriesRespository{
     create({ name, description }: ICategorieCategoryDTO): Promise<void>;
 }
 
-export { ICategoriesRespository, ICategorieCategoryDTO}
+export { ICategoriesRespository, ICategorieCategoryDTO};

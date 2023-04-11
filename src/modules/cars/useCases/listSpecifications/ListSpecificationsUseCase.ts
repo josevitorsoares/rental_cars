@@ -16,4 +16,4 @@ class ListSpecificationsUseCase {
     }
 }
 
-export { ListSpecificationsUseCase }
+export { ListSpecificationsUseCase };

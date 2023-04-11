@@ -11,4 +11,4 @@ class ListSpecificationsController {
     }
 }
 
-export { ListSpecificationsController }
+export { ListSpecificationsController };
