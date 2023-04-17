@@ -1,6 +1,6 @@
 # 💡 RentalCars
 
-Este projeto tem o objetivo de aprofundar meus estudos com foco em aprender mais sobre o universo do node.JS juntamente com o TypeScript, voltados para o back-end.
+Este projeto tem o objetivo de aprofundar meus estudos, com foco em aprender mais sobre o universo do node.JS juntamente com o TypeScript voltados para o back-end.
 
 <!-- # Tópicos -->
 
@@ -27,13 +27,14 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 - [x] Cadastro de novas especificações no banco de dados.
 - [x] Listagem de todas as especificações cadastradas na tabela "specifications".
 - [x] Cadastro de novos usuários no banco de dados (PostgreSQL).
+- [x] Iniar uma sessão para um determinado Usuário.
 
 ## Últimas Atualizações
 
-- [x] Adição da rota `GET` para Especificações na documentação do [Swagger UI](https://swagger.io/specification/v3/).
-- [x] Adição de Injeções de Dependências com o [Tsyringe](https://github.com/microsoft/tsyringe).
 - [x] Implementação da Migration CreateUser e da Entidade User.
 - [x] Adição do repositório para Entidade User e sua rota `post` para criação de novos Usuários no banco de dados.
+- [x] Adição do `JSON Web Token` para realizar sessões com os usuários cadastrados no banco de dados.
+- [x] Adição da rota para as sessões de usuários.
 
 ## Tecnologias Utilizadas
 
@@ -45,6 +46,7 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 - `TypeORM`
 - `TSyringe`
 - `PostgreSQL`
+- `JSON Web Token`
 
 ### Extras
 
