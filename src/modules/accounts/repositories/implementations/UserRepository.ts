@@ -11,6 +11,12 @@ class UserRepository implements IUserRepository {
         this.repository = connectionSource.manager.getRepository(User);
     }
 
+    async findById(id: string): Promise<User> {
+        const user = await this.repository.findOne({where: {id}});
+
+        return user;
+    }
+
     async findByUsername(username: string): Promise<User> {
         const user = await this.repository.findOne({ where: { username } });
 
