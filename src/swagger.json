@@ -21,19 +21,11 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "type": "object",
-                                "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    },
-                                    "description": {
-                                        "type": "string"
-                                    }
-                                },
-                                "example": {
-                                    "name": "create name category sample",
-                                    "description": "create description sample"
-                                }
+                                "$ref": "#/definitions/schemaCategoriesSpecifications"
+                            },
+                            "example": {
+                                "name": "Create a new example for category name",
+                                "description": "Create a new example for category description"
                             }
                         }
                     }
@@ -89,11 +81,11 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/definitions/Specification"
+                                "$ref": "#/definitions/schemaCategoriesSpecifications"
                             },
                             "example": {
-                                "name": "create name specification sample",
-                                "description": "create description sample"
+                                "name": "Create a new example for specification name",
+                                "description": "Create a new example for specification description"
                             }
                         }
                     }
@@ -122,8 +114,8 @@
                                     "type": "array",
                                     "items": {
                                         "type": "object",
-                                        "properties":{
-                                            "name":{
+                                        "properties": {
+                                            "name": {
                                                 "type": "string"
                                             },
                                             "description": {
@@ -137,10 +129,60 @@
                     }
                 }
             }
+        },
+        "/users": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Create a new user",
+                "description": "Route for creating a new user",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "driver_license": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Create a new example for name of user",
+                                    "username": "Create a new example for username of user",
+                                    "password": "Create a new example for password of user",
+                                    "email": "Create a new example for email of user",
+                                    "driver_license": "Create a new example for driver license of user"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "descrption": "Username or e-mail already exist"
+                    }
+                }
+            }
         }
     },
     "definitions": {
-        "Specification": {
+        "schemaCategoriesSpecifications": {
             "type": "object",
             "properties": {
                 "name": {
