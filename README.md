@@ -11,6 +11,7 @@ Este projeto tem o objetivo de aprofundar meus estudos, com foco em aprender mai
   - [Últimas Atualizações](#últimas-atualizações)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
     - [Extras](#extras)
+  - [Autor](#autor)
 
 ## Status do Projeto
 
@@ -31,10 +32,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 ## Últimas Atualizações
 
-- [x] Adição do repositório para Entidade User e sua rota `post` para criação de novos Usuários no banco de dados.
 - [x] Adição do `JSON Web Token` para realizar sessões com os usuários cadastrados no banco de dados.
 - [x] Adição da rota para as sessões de usuários.
 - [x] Adição da rota `POST` para Usuários na documentação do [Swagger UI](https://swagger.io/specification/v3/).
+- [x] Adição da classe `AppError` para tratamento de erros na API.
 
 ## Tecnologias Utilizadas
 
@@ -52,3 +53,11 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 - `Prettier`
 - `ESLint`
+
+## Autor
+
+👤 José Vitor Soares
+
+- LinkedIn: [@josevitorsoares](https://www.linkedin.com/in/josevitorsoares/)
+- GitHub: [@josevitorsoares](https://github.com/josevitorsoares)
+- Twitter: [@JseVitorSoares](https://twitter.com/JseVitorSoares)
