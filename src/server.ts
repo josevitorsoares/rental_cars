@@ -6,7 +6,7 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerFile from '../src/swagger.json';
 import connectionSource from '../config/ormconfig';
 import "./shared/container";
-import { AppError } from "./errors/AppError";
+import { AppError } from "@errors/AppError";
 
 connectionSource;
 

@@ -1,7 +1,7 @@
 import { DataSource, Repository } from "typeorm";
 import connectionSource from "../../../../../config/ormconfig";
-import { Category } from "../../entities/Category";
-import { ICategorieCategoryDTO, ICategoriesRespository } from "../ICategoriesRespository";
+import { Category } from "@modules/cars/entities/Category";
+import { ICategorieCategoryDTO, ICategoriesRespository } from "@modules/cars/repositories/ICategoriesRespository";
 
 class CategoryRepository implements ICategoriesRespository {
 
