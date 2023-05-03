@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "migrate:create": "typeorm migration:create \"./src/database/migrations/",
-    "migrate:up": "ts-node-dev --transpile-only ./node_modules/typeorm/cli.js migration:run -d ./src/database/index.ts"
+    "migrate:up": "ts-node-dev --transpile-only ./node_modules/typeorm/cli.js migration:run -d ./src/shared/infra/typeorm/index.ts"
   },
   "keywords": [],
   "author": "josevitorsoares",

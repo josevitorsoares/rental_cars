@@ -1,7 +1,7 @@
 import { DataSource } from "typeorm";
-import { Category } from "../src/modules/cars/entities/Category";
-import { Specification } from "../src/modules/cars/entities/Specification";
-import { User } from "../src/modules/accounts/entities/User";
+import { Category } from "@modules/cars/infra/typeorm/entities/Category";
+import { Specification } from "@modules/cars/infra/typeorm/entities/Specification";
+import { User } from "@modules/accounts/infra/typeorm/entities/User";
 
 const connectionSource = new DataSource({
     migrationsTableName: 'migrations',
