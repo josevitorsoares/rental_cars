@@ -32,10 +32,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 ## Últimas Atualizações
 
-- [x] Adição do `JSON Web Token` para realizar sessões com os usuários cadastrados no banco de dados.
 - [x] Adição da rota para as sessões de usuários.
 - [x] Adição da rota `POST` para Usuários na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 - [x] Adição da classe `AppError` para tratamento de erros na API.
+- [x] Refatoração da estrutura básica dos diretórios no projeto.
 
 ## Tecnologias Utilizadas
 
