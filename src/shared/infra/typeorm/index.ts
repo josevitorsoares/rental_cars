@@ -8,7 +8,7 @@ const connectionLocalSource = new DataSource({
     password: 'rentalcars',
     database: 'rentalCars_db',
     name: 'default',
-    migrations: ['./src/database/migrations/**/*.ts']
+    migrations: ['./src/shared/infra/typeorm/migrations/**/*.ts']
 });
 
 connectionLocalSource
