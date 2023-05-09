@@ -1,7 +1,7 @@
-import { DataSource, Repository } from "typeorm";
+import { Repository } from "typeorm";
 import connectionSource from "@config/ormconfig";
 import { Category } from '@modules/cars/infra/typeorm/entities/Category';
-import { ICategorieCategoryDTO, ICategoriesRespository } from "@modules/cars/repositories/ICategoriesRespository";
+import { ICategoriesCategoryDTO, ICategoriesRespository } from "@modules/cars/repositories/ICategoriesRespository";
 
 class CategoryRepository implements ICategoriesRespository {
 
@@ -11,7 +11,7 @@ class CategoryRepository implements ICategoriesRespository {
         this.repopsitory = connectionSource.manager.getRepository(Category);
     }
 
-    async create({ name, description }: ICategorieCategoryDTO): Promise<void> {
+    async create({ name, description }: ICategoriesCategoryDTO): Promise<void> {
         const category = this.repopsitory.create({
             name,
             description,
