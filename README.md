@@ -23,19 +23,21 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 ## Funcionalidades
 
-- [x] Cadastro de novas categorias no banco de dados (PostgreSQL).
+- [x] Cadastro de novas categorias no banco de dados.
 - [x] Listagem de todas as categorias cadastradas na tabela "categories".
 - [x] Cadastro de novas especificações no banco de dados.
 - [x] Listagem de todas as especificações cadastradas na tabela "specifications".
-- [x] Cadastro de novos usuários no banco de dados (PostgreSQL).
+- [x] Cadastro de novos usuários no banco de dados.
 - [x] Iniar uma sessão para um determinado Usuário.
+- [x] Cadastrar Usuários com privilégios de Administradores.
+- [x] Cadastrar novos carros no banco de dados.
 
 ## Últimas Atualizações
 
-- [x] Adição da rota para as sessões de usuários.
-- [x] Adição da rota `POST` para Usuários na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 - [x] Adição da classe `AppError` para tratamento de erros na API.
 - [x] Refatoração da estrutura básica dos diretórios no projeto.
+- [x] Adicionando seed para criação de Users com privilégio de Admin.
+- [x] Adição da rota `POST` para entidade `Car` na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 
 ## Tecnologias Utilizadas
 
@@ -58,6 +60,6 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 👤 José Vitor Soares
 
-- LinkedIn: [@josevitorsoares](https://www.linkedin.com/in/josevitorsoares/)
-- GitHub: [@josevitorsoares](https://github.com/josevitorsoares)
-- Twitter: [@JseVitorSoares](https://twitter.com/JseVitorSoares)
+- LinkedIn: [@josevitorsoares](https://www.linkedin.com/in/josevitorsoares/) 🔗
+- GitHub: [@josevitorsoares](https://github.com/josevitorsoares) 👨🏻‍💻
+- Twitter: [@JseVitorSoares](https://twitter.com/JseVitorSoares) 🐦
