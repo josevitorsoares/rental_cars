@@ -34,10 +34,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 
 ## Últimas Atualizações
 
-- [x] Adição da classe `AppError` para tratamento de erros na API.
 - [x] Refatoração da estrutura básica dos diretórios no projeto.
 - [x] Adicionando seed para criação de Users com privilégio de Admin.
 - [x] Adição da rota `POST` para entidade `Car` na documentação do [Swagger UI](https://swagger.io/specification/v3/).
+- [x] Adição do `middlewrae ensureAdmin` para autenticação de usuários com privilégios de Administradores.
 
 ## Tecnologias Utilizadas
 
