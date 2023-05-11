@@ -16,7 +16,7 @@
                     "Category"
                 ],
                 "summary": "Create a new category",
-                "description": "Route for creating a new vehicle category",
+                "description": "Route for creating a new vehicle category.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -44,7 +44,7 @@
                     "Category"
                 ],
                 "summary": "List all categories",
-                "descrption": "List all already created categories",
+                "description": "List all already created categories.",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -76,7 +76,7 @@
                     "Specifications"
                 ],
                 "summary": "Create a new specification",
-                "description": "Route for creating a new vehicle specification",
+                "description": "Route for creating a new vehicle specification.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -104,7 +104,7 @@
                     "Specifications"
                 ],
                 "summary": "List all specifications",
-                "descrption": "List all already created specifications",
+                "descrption": "List all already created specifications.",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -136,7 +136,7 @@
                     "Users"
                 ],
                 "summary": "Create a new user",
-                "description": "Route for creating a new user",
+                "description": "Route for creating a new user.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -176,6 +176,94 @@
                     },
                     "500": {
                         "descrption": "Username or e-mail already exist"
+                    }
+                }
+            }
+        },
+        "/cars": {
+            "post": {
+                "tags": [
+                    "Cars"
+                ],
+                "summary": "Create a new car",
+                "description": "Route for creating a new car.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "daily_rate": {
+                                        "type": "number"
+                                    },
+                                    "license_plate": {
+                                        "type": "string"
+                                    },
+                                    "fine_amount": {
+                                        "type": "number"
+                                    },
+                                    "brand": {
+                                        "type": "string"
+                                    },
+                                    "category_id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Create a new example for name of car",
+                                    "description": "Create a new example for car description",
+                                    "daily_rate": "Create a new example for the daily value of the car",
+                                    "license_plate": "Create a new example for license plate of the car",
+                                    "fine_amount": "Create a new example for the amount of the fine in the car",
+                                    "brand": "Create a new example for brand of car",
+                                    "category_id": "Enter the id of an already created category"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "description": {
+                                            "type": "string"
+                                        },
+                                        "daily_rate": {
+                                            "type": "number"
+                                        },
+                                        "license_plate": {
+                                            "type": "string"
+                                        },
+                                        "fine_amount": {
+                                            "type": "number"
+                                        },
+                                        "brand": {
+                                            "type": "string"
+                                        },
+                                        "category_id": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500":{
+                        "description": "Car license plate already exist"
                     }
                 }
             }
