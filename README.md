@@ -19,7 +19,7 @@ Em desenvolvimento. Sigo com meus estudos diários e atualizando-o sempre com o 
 
 ## Base do Projeto
 
-O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram.png`.
+O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagram.png`](https://github.com/josevitorsoares/rental_cars/blob/main/diagram.png).
 
 ## Funcionalidades
 
