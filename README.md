@@ -31,13 +31,14 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo `diagram
 - [x] Iniar uma sessão para um determinado Usuário.
 - [x] Cadastrar Usuários com privilégios de Administradores.
 - [x] Cadastrar novos carros no banco de dados.
+- [x] Listar carros dispoíveis para aluguel.
 
 ## Últimas Atualizações
 
-- [x] Refatoração da estrutura básica dos diretórios no projeto.
-- [x] Adicionando seed para criação de Users com privilégio de Admin.
-- [x] Adição da rota `POST` para entidade `Car` na documentação do [Swagger UI](https://swagger.io/specification/v3/).
 - [x] Adição do `middlewrae ensureAdmin` para autenticação de usuários com privilégios de Administradores.
+- [x] Adicionando estrutura para listagem de carros disponíveis para aluguel.
+- [x] Adição da rota `POST` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para sessão de Usuários.
+- [x] Adição da rota `GET` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para listagem de carros com status disponível para aluguel.
 
 ## Tecnologias Utilizadas
 
