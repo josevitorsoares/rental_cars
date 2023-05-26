@@ -7,13 +7,13 @@ import { AppError } from "@shared/infra/http/errors/AppError";
 @injectable()
 class CreateUserUseCase {
     constructor(
-        @inject("UserRepository")
-        private userRepository: IUserRepository
+        @inject("UsersRepository")
+        private usersRepository: IUserRepository
     ) { }
 
     async execute({ name, username, password, email, driver_license }: ICreateUserDTO): Promise<void> {
-        const usernameAlreadyExist = await this.userRepository.findByUsername(username);
-        const emailAlreadyExist = await this.userRepository.findByEmail(email);
+        const usernameAlreadyExist = await this.usersRepository.findByUsername(username);
+        const emailAlreadyExist = await this.usersRepository.findByEmail(email);
 
         const passwordHash = await hash(password, 8);
 
@@ -21,7 +21,7 @@ class CreateUserUseCase {
             throw new AppError("Username or e-mail already exist");
         }
 
-        this.userRepository.create({
+        this.usersRepository.create({
             name,
             username,
             password: `${passwordHash}`, 
