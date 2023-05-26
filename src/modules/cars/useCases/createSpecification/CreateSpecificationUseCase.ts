@@ -10,18 +10,18 @@ interface IRequest {
 @injectable()
 class CreateSpecificationUseCase {
     constructor(
-        @inject("SpecificationRepository")
-        private specificationRepository: ISpecificationsRepository
+        @inject("SpecificationsRepository")
+        private specificationsRepository: ISpecificationsRepository
     ) {}
 
     async execute({ name, description }: IRequest): Promise<void> {
-        const specificationAlreadyExist = await this.specificationRepository.findByName(name);
+        const specificationAlreadyExist = await this.specificationsRepository.findByName(name);
 
         if (specificationAlreadyExist) {
             throw new AppError('Specification already exits!');
         }
 
-        this.specificationRepository.create({ name, description });
+        this.specificationsRepository.create({ name, description });
     }
 
 

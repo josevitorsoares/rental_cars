@@ -13,21 +13,21 @@ import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarsRepository";
 
 container.registerSingleton<ICategoriesRespository>(
-    "CategoryRepository",
+    "CategoriesRepository",
     CategoryRepository
 );
 
 container.registerSingleton<ISpecificationsRepository>(
-    "SpecificationRepository",
+    "SpecificationsRepository",
     SpecificationsRepository
 );
 
 container.registerSingleton<IUserRepository>(
-    "UserRepository",
+    "UsersRepository",
     UserRepository
 );
 
 container.registerSingleton<ICarsRepository>(
-    "CarRepository",
+    "CarsRepository",
     CarsRepository
 );

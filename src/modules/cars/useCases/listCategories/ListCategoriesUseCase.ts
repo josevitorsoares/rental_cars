@@ -5,7 +5,7 @@ import { Category } from "@modules/cars/infra/typeorm/entities/Category";
 @injectable()
 class ListCategoriesUseCase{
     constructor(
-        @inject("CategoryRepository")
+        @inject("CategoriesRepository")
         private categoriesRepsoitory: ICategoriesRespository
     ){}
 
