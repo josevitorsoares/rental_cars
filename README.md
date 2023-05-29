@@ -35,10 +35,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagra
 
 ## Últimas Atualizações
 
-- [x] Adicionando estrutura para listagem de carros disponíveis para aluguel.
 - [x] Adição da rota `POST` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para sessão de Usuários.
 - [x] Adição da rota `GET` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para listagem de carros com status disponível para aluguel.
 - [x] Adição da tabela `specifications_cars`.
+- [x] Adição da Migration de criação da tabela `rentals`.
 
 ## Tecnologias Utilizadas
 
