@@ -32,13 +32,14 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagra
 - [x] Cadastrar Usuários com privilégios de Administradores.
 - [x] Cadastrar novos carros no banco de dados.
 - [x] Listar carros dispoíveis para aluguel.
+- [x] Alugar carros disponíveis.
 
 ## Últimas Atualizações
 
-- [x] Adição da rota `POST` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para sessão de Usuários.
-- [x] Adição da rota `GET` na documentação do [Swagger UI](https://swagger.io/specification/v3/) para listagem de carros com status disponível para aluguel.
 - [x] Adição da tabela `specifications_cars`.
 - [x] Adição da Migration de criação da tabela `rentals`.
+- [x] Adição da rota `POST` para a entidade `Rental`.
+- [x] Adição da biblioteca [`Day.js`](https://day.js.org/) ao projeto.
 
 ## Tecnologias Utilizadas
 
@@ -51,6 +52,7 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagra
 - `TSyringe`
 - `PostgreSQL`
 - `JSON Web Token`
+- `Day.js`
 
 ### Extras
 
