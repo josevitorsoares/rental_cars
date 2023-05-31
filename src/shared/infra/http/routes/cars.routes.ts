@@ -4,7 +4,7 @@ import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
 import { ensureAdmin } from "../middlewares/ensureAdmin";
 
 import { CreateCarController } from "@modules/cars/useCases/createCar/CreateCarController";
-import { ListAvailableCarsController } from "@modules/cars/useCases/listAvaliableCars/ListAvailableCarsController";
+import { ListAvailableCarsController } from "@modules/cars/useCases/listAvailableCars/ListAvailableCarsController";
 import { CreateCarSpecificationController } from "@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController";
 
 const carsRoutes = Router();
