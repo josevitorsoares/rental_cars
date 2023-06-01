@@ -31,15 +31,16 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagra
 - [x] Iniar uma sessão para um determinado Usuário.
 - [x] Cadastrar Usuários com privilégios de Administradores.
 - [x] Cadastrar novos carros no banco de dados.
+- [x] Listar todos os carros no banco de dados.
 - [x] Listar carros dispoíveis para aluguel.
 - [x] Alugar carros disponíveis.
 
 ## Últimas Atualizações
 
-- [x] Adição da tabela `specifications_cars`.
 - [x] Adição da Migration de criação da tabela `rentals`.
 - [x] Adição da rota `POST` para a entidade `Rental`.
 - [x] Adição da biblioteca [`Day.js`](https://day.js.org/) ao projeto.
+- [x] Adição da listagem de todos os carros (Disponíveis e Indisponíveis para aluguel).
 
 ## Tecnologias Utilizadas
 
