@@ -30,7 +30,7 @@ class RentalRepository implements IRentalsRepository {
 
     async findOpenRentalByCars(car_id: string): Promise<Rental> {
         const openByCar = await this.repository.findOne({
-            where: {car_id, total: null},
+            where: {car_id, total: 0},
         });
         
         return openByCar;
@@ -38,7 +38,7 @@ class RentalRepository implements IRentalsRepository {
 
     async findOpenRentalByUsers(user_id: string): Promise<Rental> {
         const openByUser = await this.repository.findOne({
-            where: {user_id, total: null},
+            where: {user_id, total: 0},
         });
         
         return openByUser;

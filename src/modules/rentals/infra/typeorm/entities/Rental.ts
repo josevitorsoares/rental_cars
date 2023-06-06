@@ -39,6 +39,7 @@ class Rental {
         if (!this.id) {
             this.id = uuidV4();
         }
+        this.total = 0;
     }
 }
 
