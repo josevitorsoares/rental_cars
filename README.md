@@ -8,6 +8,11 @@ Este projeto tem o objetivo de aprofundar meus estudos, com foco em aprender mai
   - [Status do Projeto](#status-do-projeto)
   - [Base do Projeto](#base-do-projeto)
   - [Funcionalidades](#funcionalidades)
+    - [Categorias](#categorias)
+    - [Especificações](#especificações)
+    - [Usuários](#usuários)
+    - [Carros](#carros)
+    - [Aluguéis](#aluguéis)
   - [Últimas Atualizações](#últimas-atualizações)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
     - [Extras](#extras)
@@ -19,28 +24,44 @@ Em desenvolvimento. Sigo com meus estudos diários e atualizando-o sempre com o 
 
 ## Base do Projeto
 
-O projeto tem como base o Diagrama de Classes representado pelo arquivo [`diagram.png`](https://github.com/josevitorsoares/rental_cars/blob/main/diagram.png).
+O projeto tem como base o Diagrama de Classes representado pelo arquivo [diagram.png](https://github.com/josevitorsoares/rental_cars/blob/main/diagram.png).
 
 ## Funcionalidades
 
+### Categorias
+
 - [x] Cadastro de novas categorias no banco de dados.
 - [x] Listagem de todas as categorias cadastradas na tabela "categories".
+
+### Especificações
+
 - [x] Cadastro de novas especificações no banco de dados.
 - [x] Listagem de todas as especificações cadastradas na tabela "specifications".
+
+### Usuários
+
 - [x] Cadastro de novos usuários no banco de dados.
 - [x] Iniar uma sessão para um determinado Usuário.
 - [x] Cadastrar Usuários com privilégios de Administradores.
+
+### Carros
+
 - [x] Cadastrar novos carros no banco de dados.
 - [x] Listar todos os carros no banco de dados.
 - [x] Listar carros dispoíveis para aluguel.
+
+### Aluguéis
+
 - [x] Alugar carros disponíveis.
+- [x] Devolver carros alugados.
+- [x] Listar todos os aluguéis de determinado usuário.
 
 ## Últimas Atualizações
 
-- [x] Adição da Migration de criação da tabela `rentals`.
-- [x] Adição da rota `POST` para a entidade `Rental`.
-- [x] Adição da biblioteca [`Day.js`](https://day.js.org/) ao projeto.
 - [x] Adição da listagem de todos os carros (Disponíveis e Indisponíveis para aluguel).
+- [x] Alugar qualquer um dos carros disponíveis.
+- [x] Devolução de carros alugados.
+- [x] Listagem de todos os alugueis feito por determinado usuário.
 
 ## Tecnologias Utilizadas
 
