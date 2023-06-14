@@ -5,6 +5,7 @@ import { Specification } from "@modules/cars/infra/typeorm/entities/Specificatio
 import { User } from "@modules/accounts/infra/typeorm/entities/User";
 import { Car } from "@modules/cars/infra/typeorm/entities/Car";
 import { Rental } from "@modules/rentals/infra/typeorm/entities/Rental";
+import { UserTokens } from "@modules/accounts/infra/typeorm/entities/UserTokens";
 
 const connectionSource = new DataSource({
     migrationsTableName: 'migrations',
@@ -14,7 +15,7 @@ const connectionSource = new DataSource({
     username: 'admin_db',
     password: 'rentalcars',
     database: 'rentalCars_db',
-    entities: [Category, Specification, User, Car, Rental],
+    entities: [Category, Specification, User, Car, Rental, UserTokens],
     synchronize: false,
 });
 
