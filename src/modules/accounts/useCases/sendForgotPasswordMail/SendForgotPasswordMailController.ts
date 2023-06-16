@@ -11,7 +11,7 @@ class SendForgotPasswordMailController {
 
         sendForgotPasswordMailUseCase.execute(email);
 
-        return response;
+        return response.send();
     }
 }
 
