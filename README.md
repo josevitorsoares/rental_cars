@@ -43,6 +43,8 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [diagram
 - [x] Cadastro de novos usuários no banco de dados.
 - [x] Iniar uma sessão para um determinado Usuário.
 - [x] Cadastrar Usuários com privilégios de Administradores.
+- [x] Enviar email utilizando o [Ethereal Email](https://ethereal.email/) para redefinição de senha.
+- [x] Redefinição de senha de um determinado usuário.
 
 ### Carros
 
@@ -58,10 +60,10 @@ O projeto tem como base o Diagrama de Classes representado pelo arquivo [diagram
 
 ## Últimas Atualizações
 
-- [x] Adição da listagem de todos os carros (Disponíveis e Indisponíveis para aluguel).
-- [x] Alugar qualquer um dos carros disponíveis.
-- [x] Devolução de carros alugados.
 - [x] Listagem de todos os alugueis feito por determinado usuário.
+- [x] Enviar um email utilizando o [Ethereal Email](https://ethereal.email/) para redefinir a senha do usuário.
+- [x] Realizar a redefinição de senha de um determinado usuário.
+- [x] Utilização de váriaveis de ambiente.
 
 ## Tecnologias Utilizadas
 
